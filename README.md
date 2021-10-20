@@ -13,7 +13,7 @@ pip install .
 
 
 ## Notebooks
-To reproduce the results of the paper simply open the notebook `hamiltonian/experiments/Exp1 AISTATS 2022.ipynb`.
+To reproduce the results of the paper simply open the notebook `gamesopt/experiments/Exp1 AISTATS 2022.ipynb`.
 
 ## Structure of the code
 There is two main class `Game` and `Algorithm`.

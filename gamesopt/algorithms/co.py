@@ -1,5 +1,5 @@
 from .algorithm import Algorithm
-from hamiltonian.games.sampler import DoubleLoopSampler
+from gamesopt.games.sampler import DoubleLoopSampler
 import torch.autograd as autograd
 from .lr_scheduler import BaseLR, LRScheduler
 import copy

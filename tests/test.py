@@ -1,7 +1,7 @@
 import unittest
 import torch
-from hamiltonian.games import QuadraticGame
-from hamiltonian.algorithms import ConsensusOptimization
+from gamesopt.games import QuadraticGame
+from gamesopt.algorithms import ConsensusOptimization
 
 
 class Test(unittest.TestCase):

@@ -1,6 +1,6 @@
 import submitit
-from hamiltonian.games import GaussianBilinearGame
-from hamiltonian.algorithms import ConsensusOptimization
+from gamesopt.games import GaussianBilinearGame
+from gamesopt.algorithms import ConsensusOptimization
 import torch
 import argparse
 from enum import Enum

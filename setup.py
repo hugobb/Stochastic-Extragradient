@@ -8,12 +8,12 @@ setuptools.setup(
     version="0.1",
     author="Hugo Berard",
     author_email="berard.hugo@gmail.com",
-    description="Stochastic Gradient Descent-Ascent and Consensus Optimization for Smooth Games: Convergence Analysis under Expected Co-coercivity",
+    description="Stochastic Extragradient: General Analysis and Improved Rates",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/hugobb/StochasticGamesOpt",
+    url="https://github.com/hugobb/SEG_AISTATS_2022",
     project_urls={
-        "Bug Tracker": "https://github.com/hugobb/StochasticGamesOpt/issues",
+        "Bug Tracker": "https://github.com/hugobb/SEG_AISTATS_2022/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",

@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="gamesopt",
+    name="GamesOpt",
     version="0.1",
     author="Hugo Berard",
     author_email="berard.hugo@gmail.com",
@@ -20,8 +20,7 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "gamesopt"},
-    packages=setuptools.find_packages(where="gamesopt"),
+    packages=['gamesopt', 'gamesopt.games', 'gamesopt.algorithms'],
     python_requires=">=3.6",
     install_requires=[
         'tqdm',

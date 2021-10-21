@@ -10,7 +10,7 @@ class SEG(Algorithm):
         self.buf = {}
         self.same_sample = same_sample
         self.full_batch = full_batch
-        self.batch_size = 1
+        self.batch_size = batch_size
 
         self.lr_e = lr_e
         if self.lr_e is None:

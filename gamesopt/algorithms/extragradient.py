@@ -5,11 +5,12 @@ import torch
 
 class SEG(Algorithm):
     # The recommended learning rate is 1/L
-    def __init__(self, game, lr_e=None, same_sample=False, full_batch=False, *args, **kwargs):
+    def __init__(self, game, lr_e=None, same_sample=False, batch_size=1, full_batch=False, *args, **kwargs):
         super().__init__(game, *args, **kwargs)
         self.buf = {}
         self.same_sample = same_sample
         self.full_batch = full_batch
+        self.batch_size = 1
 
         self.lr_e = lr_e
         if self.lr_e is None:
@@ -29,7 +30,7 @@ class SEG(Algorithm):
         if self.full_batch:
             x = None
         else:
-            x = self.game.sample(return_index=True)
+            x = self.game.sample(self.batch_size, return_index=True)
         return x
 
     def update(self):

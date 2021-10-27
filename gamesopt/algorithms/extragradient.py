@@ -42,7 +42,10 @@ class SEG(Algorithm):
                 d_p = self.gradient_update(p, g)
                 self.buf[p] = torch.clone(p).detach()
                 p.data -= d_p*self.lr_e[i](self.k, index)
-
+        
+        self.n_samples += len(x)
+                
+                
         if not self.same_sample:
             x, index = self.sample()
         grad = self.grad(x)
@@ -52,3 +55,6 @@ class SEG(Algorithm):
             for p, g in zip(player.parameters(), grad[i]):
                 d_p = self.gradient_update(p, g)
                 p.data = self.buf[p] - self.lr[i](self.k, index) * d_p
+                
+        self.n_samples += len(x)        
+       

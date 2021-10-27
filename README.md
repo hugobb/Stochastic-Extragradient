@@ -5,8 +5,8 @@ This repository is the official implementation of the paper "Stochastic Extragra
 ## Installation
 
 ```
-git clone https://github.com/hugobb/SEG_AISTATS_2022.git
-cd SEG_AISTATS_2022
+git clone https://github.com/hugobb/Stochastic-Extragradient.git
+cd Stochastic-Extragradient
 pip install .
 ```
 

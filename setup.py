@@ -11,9 +11,9 @@ setuptools.setup(
     description="Stochastic Extragradient: General Analysis and Improved Rates",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/hugobb/SEG_AISTATS_2022",
+    url="https://github.com/hugobb/Stochastic-Extragradient",
     project_urls={
-        "Bug Tracker": "https://github.com/hugobb/SEG_AISTATS_2022/issues",
+        "Bug Tracker": "https://github.com/hugobb/Stochastic-Extragradient/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
